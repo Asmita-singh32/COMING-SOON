@@ -1,7 +1,5 @@
 import React from 'react';
 import Hero from './components/Hero';
-import Features from './components/Features';
-import Newsletter from './components/Newsletter';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
 
@@ -76,13 +74,8 @@ function App() {
       {/* Main Page Layout */}
       <main className="relative z-10">
         <Hero
-          onNotifyClick={() => scrollToSection('newsletter-section')}
           onContactClick={() => scrollToSection('contact-section')}
         />
-
-        <Features />
-
-        <Newsletter />
 
         <Contact />
 

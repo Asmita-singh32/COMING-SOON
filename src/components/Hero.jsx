@@ -1,8 +1,8 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { Bell, ArrowRight } from 'lucide-react';
+import { ArrowRight } from 'lucide-react';
 
-const Hero = ({ onNotifyClick, onContactClick }) => {
+const Hero = ({ onContactClick }) => {
   return (
     <section className="relative min-h-screen flex flex-col items-center justify-center text-center px-4 md:px-8 py-16 overflow-hidden">
       {/* Decorative background glows */}
@@ -33,12 +33,12 @@ const Hero = ({ onNotifyClick, onContactClick }) => {
           initial={{ scale: 0.8, opacity: 0 }}
           animate={{ scale: 1, opacity: 1 }}
           transition={{ delay: 0.15, duration: 1, cubicBezier: [0.16, 1, 0.3, 1] }}
-          className="w-36 h-36 md:w-44 md:h-44 rounded-full bg-white flex items-center justify-center p-1.5 mb-10 shadow-lg border border-slate-100 glow-logo overflow-hidden"
+          className="w-48 h-48 md:w-60 md:h-60 flex items-center justify-center mb-10 glow-logo"
         >
           <img
             src="/logo.png"
             alt="Medicore Logo"
-            className="w-full h-full object-contain rounded-full"
+            className="w-full h-full object-contain"
             onError={(e) => {
               // Fallback SVG if logo fails to load
               e.target.style.display = 'none';
@@ -89,16 +89,8 @@ const Hero = ({ onNotifyClick, onContactClick }) => {
           className="flex flex-col sm:flex-row gap-4 w-full sm:w-auto px-6"
         >
           <button
-            onClick={onNotifyClick}
-            className="flex items-center justify-center gap-2.5 px-8 py-4 rounded-xl bg-primary-green hover:bg-medical-red text-white transition-colors duration-300 font-bold text-base shadow-[0_4px_15px_rgba(93,187,0,0.2)] hover:shadow-[0_4px_15px_rgba(214,40,40,0.2)] transform hover:-translate-y-0.5 active:translate-y-0 cursor-pointer"
-          >
-            <Bell size={18} className="animate-bounce" />
-            Notify Me
-          </button>
-
-          <button
             onClick={onContactClick}
-            className="flex items-center justify-center gap-2.5 px-8 py-4 rounded-xl bg-white hover:bg-slate-50 border border-slate-200 hover:border-slate-300 text-[#475569] font-semibold text-base shadow-sm transition-all duration-300 transform hover:-translate-y-0.5 active:translate-y-0 cursor-pointer"
+            className="flex items-center justify-center gap-2.5 px-8 py-4 rounded-xl bg-primary-green hover:bg-medical-red text-white transition-colors duration-300 font-bold text-base shadow-[0_4px_15px_rgba(93,187,0,0.2)] hover:shadow-[0_4px_15px_rgba(214,40,40,0.2)] transform hover:-translate-y-0.5 active:translate-y-0 cursor-pointer"
           >
             Contact Us
             <ArrowRight size={18} />

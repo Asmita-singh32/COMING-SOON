@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { Phone, Mail, ShieldCheck, Lock, HeartHandshake, BadgeCheck } from 'lucide-react';
+import { Phone } from 'lucide-react';
 
 const InstagramIcon = ({ size = 24, ...props }) => (
   <svg
@@ -44,28 +44,7 @@ const GmailIcon = ({ size = 24, ...props }) => (
   </svg>
 );
 
-const trustBadges = [
-  {
-    icon: ShieldCheck,
-    title: 'Trusted Healthcare Brand',
-    description: 'Providing genuine homeopathic solutions with decades of lab heritage.'
-  },
-  {
-    icon: Lock,
-    title: 'Safe & Secure Shopping',
-    description: 'Your transactions are protected with top-tier SSL encryption standards.'
-  },
-  {
-    icon: HeartHandshake,
-    title: 'Customer-Centric Support',
-    description: 'A compassionate support desk putting your health and queries first.'
-  },
-  {
-    icon: BadgeCheck,
-    title: 'Quality Assured Products',
-    description: 'Direct procurement adhering strictly to global quality guidelines.'
-  }
-];
+
 
 const contactMethods = [
   {
@@ -106,51 +85,7 @@ const Contact = () => {
 
       <div className="max-w-6xl mx-auto z-10">
         
-        {/* TRUST SECTION */}
-        <div className="mb-24">
-          <div className="text-center mb-16">
-            <motion.h2
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true, margin: '-100px' }}
-              transition={{ duration: 0.6 }}
-              className="text-2xl md:text-4xl font-bold tracking-tight text-[#1E293B] mb-4"
-            >
-              Our Promise of <span className="bg-gradient-to-r from-primary-green to-dark-green bg-clip-text text-transparent">Complete Trust</span>
-            </motion.h2>
-            <motion.div
-              initial={{ width: 0 }}
-              whileInView={{ width: '60px' }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.6, delay: 0.2 }}
-              className="h-0.5 bg-primary-green mx-auto rounded-full"
-            />
-          </div>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-            {trustBadges.map((badge, idx) => {
-              const Icon = badge.icon;
-              return (
-                <motion.div
-                  key={idx}
-                  initial={{ opacity: 0, scale: 0.95 }}
-                  whileInView={{ opacity: 1, scale: 1 }}
-                  viewport={{ once: true, margin: '-50px' }}
-                  transition={{ delay: idx * 0.1, duration: 0.5 }}
-                  className="flex flex-col items-center text-center p-6 rounded-2xl bg-white border border-slate-100 shadow-sm"
-                >
-                  <div className="w-12 h-12 rounded-full bg-primary-green/10 border border-primary-green/20 flex items-center justify-center text-primary-green mb-4 shadow-sm">
-                    <Icon size={22} />
-                  </div>
-                  <h3 className="text-base font-bold text-[#1E293B] mb-2">{badge.title}</h3>
-                  <p className="text-[#475569] text-xs leading-relaxed font-body">{badge.description}</p>
-                </motion.div>
-              );
-            })}
-          </div>
-        </div>
-
-        <hr className="border-slate-200/60 mb-24" />
 
         {/* CONTACT SECTION */}
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
