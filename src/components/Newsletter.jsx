@@ -29,14 +29,14 @@ const Newsletter = () => {
     setTimeout(() => {
       try {
         // Save to local storage for demonstration
-        const subscriptions = JSON.parse(localStorage.getItem('medicore_subscriptions') || '[]');
+        const subscriptions = JSON.parse(localStorage.getItem('medicores_subscriptions') || '[]');
         if (subscriptions.includes(email)) {
           setStatus('error');
           setErrorMessage('This email is already subscribed!');
           return;
         }
         subscriptions.push(email);
-        localStorage.setItem('medicore_subscriptions', JSON.stringify(subscriptions));
+        localStorage.setItem('medicores_subscriptions', JSON.stringify(subscriptions));
 
         setStatus('success');
         setEmail('');
@@ -73,7 +73,7 @@ const Newsletter = () => {
             Be the First to <span className="bg-gradient-to-r from-primary-green to-dark-green bg-clip-text text-transparent">Know When We Launch</span>
           </h2>
           <p className="text-[#475569] max-w-xl mx-auto text-sm md:text-base mb-10 leading-relaxed font-body">
-            Subscribe to our newsletter to receive launch notifications, exclusive early-bird offers, and authentic health guides from Medicore.
+            Subscribe to our newsletter to receive launch notifications, exclusive early-bird offers, and authentic health guides from Medicores.
           </p>
 
           <AnimatePresence mode="wait">
@@ -147,7 +147,7 @@ const Newsletter = () => {
                 <CheckCircle2 size={48} className="text-primary-green mb-4 animate-bounce" />
                 <h3 className="text-xl font-bold text-[#1E293B] mb-2">You're Subscribed!</h3>
                 <p className="text-[#475569] text-sm mb-4 font-body">
-                  Thank you for joining Medicore. We will keep you updated with the latest news and launch dates.
+                  Thank you for joining Medicores. We will keep you updated with the latest news and launch dates.
                 </p>
                 <button
                   onClick={() => setStatus('idle')}

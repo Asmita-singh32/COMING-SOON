@@ -93,7 +93,7 @@ const Features = () => {
             transition={{ duration: 0.6 }}
             className="text-3xl md:text-5xl font-bold tracking-tight text-[#1E293B] mb-4"
           >
-            Why Choose <span className="bg-gradient-to-r from-primary-green to-dark-green bg-clip-text text-transparent">Medicore</span>?
+            Why Choose <span className="bg-gradient-to-r from-primary-green to-dark-green bg-clip-text text-transparent">Medicores</span>?
           </motion.h2>
           <motion.div 
             initial={{ width: 0 }}

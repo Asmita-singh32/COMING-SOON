@@ -1,4 +1,4 @@
-# Medicore Coming Soon Page
+# Medicores Coming Soon Page
 
 A modern coming soon landing page built with React and Vite.
 

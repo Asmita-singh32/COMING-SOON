@@ -14,7 +14,7 @@ const Footer = () => {
         <div className="text-center md:text-left">
           <div className="flex items-center justify-center md:justify-start gap-1 mb-2">
             <span className="text-xl font-extrabold tracking-tight text-[#1E293B] font-sans">
-              Medicore<span className="text-primary-green">.</span>
+              Medicores<span className="text-primary-green">.</span>
             </span>
           </div>
           <p className="text-[#64748B] text-xs tracking-wider uppercase font-semibold font-body">
@@ -25,7 +25,7 @@ const Footer = () => {
         {/* Copyright */}
         <div className="text-center md:text-right flex flex-col sm:flex-row items-center gap-4 md:gap-8">
           <p className="text-[#64748B] text-sm font-body">
-            &copy; 2026 Medicore. All Rights Reserved.
+            &copy; 2026 Medicores. All Rights Reserved.
           </p>
 
           <button

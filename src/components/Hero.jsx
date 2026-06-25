@@ -37,7 +37,7 @@ const Hero = ({ onContactClick }) => {
         >
           <img
             src="/logo.png"
-            alt="Medicore Logo"
+            alt="Medicores Logo"
             className="w-full h-full object-contain"
             onError={(e) => {
               // Fallback SVG if logo fails to load
@@ -47,7 +47,7 @@ const Hero = ({ onContactClick }) => {
           />
           <div className="hidden text-dark-navy font-bold text-center">
             <span className="text-primary-green text-2xl font-serif">M</span>
-            <span className="block text-xs uppercase tracking-widest mt-1">Medicore</span>
+            <span className="block text-xs uppercase tracking-widest mt-1">Medicores</span>
           </div>
         </motion.div>
 

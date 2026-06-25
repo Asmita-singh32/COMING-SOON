@@ -98,7 +98,7 @@ const Contact = () => {
               transition={{ duration: 0.6 }}
               className="text-3xl md:text-5xl font-bold tracking-tight text-[#1E293B] mb-6"
             >
-              Get In Touch With <span className="text-primary-green">Medicore</span>
+              Get In Touch With <span className="text-primary-green">Medicores</span>
             </motion.h2>
             <motion.p
               initial={{ opacity: 0 }}
